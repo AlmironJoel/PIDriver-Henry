@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Hace que los elementos se envuelvan en filas automáticamente */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .pages {
+    display: flex;
+    flex-wrap: wrap; /* Hace que los números de página se envuelvan en filas automáticamente */
+    justify-content: center;
+    align-items: center;
+    width: 78%
+  }
+  
+ /* Estilo para cada número de página */
+.page-number {
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 14px;
+  width: 14px;
+  font-size: 0.7rem;
+  }
+.page-number.alt {
+    background-color: #000;
+    color: #fff;
+  }
+ .page-number.alt1 {
+    background-color: #fff;
+    color: #000;
+  }
+  /* Estilo cuando el número de página está activo */
+  .page-number.active {
+    background-color:  #F8553A; /* Color de fondo cuando está activo */
+   /* color: #ffffff;  Color de texto cuando está activo */
+  }
+
+  .page-number:hover {
+    background-color: #FDC901; /* Color de fondo en hover */
+    color: #fff; /* Color de texto en hover */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave de color de fondo y texto en hover */
+  }

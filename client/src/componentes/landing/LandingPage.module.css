@@ -1,0 +1,34 @@
+.landingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+
+   
+
+  }
+  
+
+  
+  .content {
+    text-align: center;
+    color: #040303; /* Color del texto */
+    z-index: 1; /* Coloca el contenido sobre la imagen de fondo */
+  }
+  
+  .enterButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff000d; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .enterButton:hover {
+    background-color: #FDB101;; /* Cambia el color de fondo al pasar el cursor por encima */
+    color: black;
+  }
+  

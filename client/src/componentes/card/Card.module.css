@@ -1,0 +1,38 @@
+.container{
+  background-color: black;
+  width: 200px;
+  border: white 4px solid;
+  line-height: 20px;
+  gap: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 8 white;
+}
+.container:hover{
+  transform: scale(1.05);
+}
+.text {
+  color: rgb(255, 255, 255);
+}
+.image {
+   width: 200px;
+    height: 200px; 
+    margin-bottom: 10px;
+    object-fit: cover; 
+  }
+
+.p {
+  width: 180px;
+  padding: 0 10px;
+  line-height: normal;
+
+  /* for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.overflowVisible {
+  white-space: initial;
+  color: rgb(30, 255, 0);
+}
+
+

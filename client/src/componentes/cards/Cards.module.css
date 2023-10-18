@@ -1,0 +1,24 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+    margin: 1%;
+    gap: 20px
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    text-align: center; 
+}

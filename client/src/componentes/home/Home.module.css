@@ -1,0 +1,35 @@
+.container {
+color: white;
+    /* background-image: url('./assets/f1-bg3.jpg'); */
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botones button{
+    
+    border-radius: 5px;
+    color: var(--yell);
+    padding: 5px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+}
+.pageNum{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 8px;
+    width: 45px;
+}
+.mensajeCentral{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+    font-size: 2rem;
+
+}

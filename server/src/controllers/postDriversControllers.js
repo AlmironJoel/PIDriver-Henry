@@ -38,7 +38,7 @@ const createDriver = async (nombre, apellido,image,descripcion,nacionalidad,Fech
       teamName,
     });
     if (teamName) {
-      // const teamNames = teamName.split(",");
+      //  const teamNames = teamName.split(",");
 
       const searchTeam = await Teams.findAll({
         where: { teamName: { [Op.in]: teamName } },

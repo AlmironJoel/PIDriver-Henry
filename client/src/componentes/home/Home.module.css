@@ -12,7 +12,8 @@ color: white;
 .botones button{
     
     border-radius: 5px;
-    color: var(--yell);
+    background-color: black;
+    color: white;
     padding: 5px;
     width: 200px;
     border: none;

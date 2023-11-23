@@ -3,7 +3,6 @@ import style from './Cards.module.css';
 import {useSelector} from 'react-redux'
 
 export default function Cards({drivers}) {
-console.log(drivers);
    return (
       <div className={style.container}>
         { drivers.map((driver) => (

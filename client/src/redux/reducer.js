@@ -52,26 +52,26 @@ function reducer(state = initialState, action) {
 
     case FILTER_DRIVERS:
       const { team, source, order } = action.payload;
-      console.log("team selection: ", team);
-      console.log("source selection: ", source);
-      console.log("order selection: ", order);
+      // console.log("team selection: ", team);
+      // console.log("source selection: ", source);
+      // console.log("order selection: ", order);
 
       // Filtrado por source
       let filteredDrivers = state.driversCopy;
 
       if (order === "Ascending") {
-        console.log("deberia ordenar por nombre ascendente: ", order);
+        // console.log("deberia ordenar por nombre ascendente: ", order);
     
         filteredDrivers.sort((a, b) => a.name?.surname.localeCompare(b.surname));
       } else if (order === "Descending") {
-        console.log("deberia ordenar por nombre descendente: ", order);
+        // console.log("deberia ordenar por nombre descendente: ", order);
         filteredDrivers.sort((a, b) => b.name?.surname.localeCompare(a.surname));
         
       } else if (order === "Fecha Asc") {
-        console.log("deberia ordenar por birthday ascendente: ", order);
+        // console.log("deberia ordenar por birthday ascendente: ", order);
         filteredDrivers.sort((a, b) => new Date(a.dob) - new Date(b.dob));
       } else if (order === "Fecha Desc") {
-        console.log("deberia ordenar por birthday descendente: ", order);
+        // console.log("deberia ordenar por birthday descendente: ", order);
         filteredDrivers.sort((a, b) => new Date(b.dob) - new Date(a.dob));
       }
 
@@ -107,7 +107,7 @@ function reducer(state = initialState, action) {
 
       // Ordenar
 
-      console.log("filteredDrivers: ", filteredDrivers);
+      // console.log("filteredDrivers: ", filteredDrivers);
 
       // Verificar si no se encontraron conductores
       if (filteredDrivers.length === 0) {

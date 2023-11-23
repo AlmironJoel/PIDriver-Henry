@@ -84,6 +84,17 @@ function Home() {
             <Cards drivers={currentDrivers} />
             )
       }
+        <div className={style.botones}>
+        <button onClick={PreviousPage} disabled={currentPage === 1}>
+          Previous
+        </button>
+
+        <div className={style.pageNum}>{currentPage}</div>
+
+        <button onClick={NextPage} disabled={endPage >= allDrivers.length}>
+          Next
+        </button>
+      </div>
       <Pagination
         currentPage={currentPage}
         totalPages={Math.ceil(allDrivers.length / driversPerPage)}
